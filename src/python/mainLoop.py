@@ -23,7 +23,7 @@ detector=dlib.get_frontal_face_detector() # Load dlib's face detector
 
 
 
-ROOT = getGitRepFolder()  + '/VanillaCNN'# ROOT is the git root folder .
+ROOT = getGitRepFolder()  + '/src'# ROOT is the git root folder .
 sys.path.append(os.path.join(ROOT, 'python'))  # Assume git root directory
 DATA_PATH = os.path.join(ROOT, 'data')
 CSV_TEST  = os.path.join(ROOT, 'data', 'testImageList.txt')
@@ -49,7 +49,7 @@ AFW_STEPS =['downloadAFW',
             'testAFW_TestSet'] # Steps needed for AFW
 
 
-WIIVV_STEPS=['downloadALFW', 
+WORKING_STEPS=['downloadALFW', 
             'testSetHD5', 
             'testSetPickle', 
             'trainSetHD5', 
@@ -58,7 +58,7 @@ WIIVV_STEPS=['downloadALFW',
             'testAFLW_TestSet', 
             'testErrorMini'] # Steps needed for AFLW
 
-STEPS = WIIVV_STEPS
+STEPS = WORKING_STEPS
 
 ##########################################    SCRIPT STEPS       ##################################################
 

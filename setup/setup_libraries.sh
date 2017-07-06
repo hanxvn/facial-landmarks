@@ -23,6 +23,8 @@ sudo apt-get install python-skimage
 
 sudo apt-get install python-protobuf
 
+sudo apt-get install python-h5py
+
 cd ..
 wget http://dlib.net/files/dlib-19.4.tar.bz2
 tar xvf dlib-19.4.tar.bz2
@@ -35,3 +37,6 @@ sudo make install
 sudo ldconfig
 cd ..
 sudo python setup.py install
+
+sudo rm -f dlib-19.4.tar.bz2
+sudo rm -r -f dlib-19.4

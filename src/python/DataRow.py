@@ -554,7 +554,7 @@ class DataRow:
   
             
 class Predictor:
-    ROOT = getGitRepFolder() + '/VanillaCNN'
+    ROOT = getGitRepFolder() + '/src'
     
     def preprocess(self, resized, landmarks):
         ret = resized.astype('f4')
